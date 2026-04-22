@@ -4,7 +4,7 @@ const DownButton = () => {
   return (
     <div>
       {/* Down arrow */}
-      <div className="absolute bottom-30 left-[20%] z-30 border-none">
+      <div className="absolute top-[40vh] left-[20%] z-30 border-none">
         <motion.button
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
