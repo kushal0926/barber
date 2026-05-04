@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -12,7 +13,6 @@
   font-style: normal;
 }
 
-
 @theme {
   --custom-white: #f9f6f0;
   --custom-black: #1c1917;
@@ -21,6 +21,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-impact: "Impact", sans-serif;
+  --font-inknut: "Inknut Antiqua", serif;
   --color-cream: var(--custom-white);
   --color-charcol: var(--custom-black);
 }
@@ -28,10 +29,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: "Inknut Antiqua", serif;
 }
-
-
 
 /* 1. Use a more-intuitive box-sizing model */
 *,
@@ -47,11 +46,16 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* 4. Add accessible line-height */
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 /* 6. Improve media defaults */

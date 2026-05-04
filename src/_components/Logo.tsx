@@ -1,16 +1,15 @@
-// import Image from "next/image";
+import Image from "next/image";
 
 const Logo = () => {
   return (
-    <div className="absolute top-4 left-1/2 -translate-x-1/2 z-30 flex flex-col">
-      {/* <Image
-        src="/ladslounge.png"
+    <div className="absolute top-1 left-1/3 z-30 pointer-events-none">
+      <Image
+        src="/st2-removebg-preview.png"
         alt="Lads Lounge"
-        width={70}
-        height={45}
+        width={400}
+        height={105}
         className="object-contain"
-      /> */}
-      <h1 className="text-5xl font-bold">ST Barber Shop</h1>
+      />
     </div>
   );
 };
